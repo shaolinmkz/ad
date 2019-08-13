@@ -1,0 +1,375 @@
+.banner-container {
+  position: fixed;
+  width: 100%;
+  bottom: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {
+visibility: hidden;
+    bottom: -100%;
+  }
+  to {bottom: 0px;    visibility: visible;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {bottom: -100%;     visibility: hidden;}
+  to {bottom: 0px;     visibility: visible;}
+}
+
+.top-content {
+  width: 60%;
+  display: grid;
+  visibility: hidden;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 2px;
+  padding: 0 10%;
+}
+
+.youtube-container {
+  background-color: #69626e;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.ranking-container {
+  position: relative;
+  background-color: #69626e;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ranking-container button {
+  width: 200px;
+  height: 30px;
+  align-self: center;
+  margin: 0 auto;
+  font-size: 45px
+}
+
+.rank-wrapper, .rank-wrapper-heading {
+  display: grid;
+  width: 200px;
+  grid-template-columns: 150px 40px;
+  grid-column-gap: 10px;
+  justify-self: start;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.rank-wrapper p {
+  margin: 0;
+}
+
+.name-box {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-box.big {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.name-box.small {
+  width: 30px;
+  cursor: grab;
+}
+
+.youtube-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.youtube {
+  height: 80%;
+}
+
+.youtube-container button {
+  width: 200px;
+  height: 30px;
+  align-self: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.content-wrapper {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.content-item {
+  position: relative;
+  background-color: #69626e;
+  width: 80%;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  grid-template-rows: 1fr;
+  justify-self: start;
+  height: 100px; 
+}
+
+.logo-container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 80%;
+  width: 80%;
+  align-self: center;
+  object-fit: contain;
+visibility: inherit;
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.text-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.text-container p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container button {
+  width: 150px;
+  height: 35px;
+  margin: 0 auto;
+  font-size: 20px;
+  visibility: inherit;
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+button {
+  background-color: #cf913e;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.bottom-content {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  grid-column-gap: 10px;
+  margin-top: 10px;
+    z-index: 2;
+}
+
+.bottom-line {
+height: 20px;
+  width: 100%;  
+}
+
+.hold {
+  border: solid rgb(129, 129, 129) 2px;
+  cursor: move;
+}
+
+.section {
+  text-align: center;
+}
+
+.section-two {
+  display: none;
+  text-align: center;
+  position: relative;
+}
+
+#submit, #share {
+  font-size: 20px;
+  cursor: pointer;
+  background: #ce9a56;
+  height: 100%;
+  transition: 0.2s ease-in-out background;
+}
+.chartLogo {
+  position: absolute;
+  width: 50px;
+  right: 10px;
+  top: 10px;
+}
+.social-media-container {
+  display: none;
+}
+.social-media-icon, #social-media-icon {
+  width: 25px;
+  border-radius: 3px;
+  margin-left: 10px; 
+  cursor: pointer;
+}
+
+#submit:hover {
+ background: #e0b071
+}
+#myChart {
+  background: white;
+  margin: 20px 0
+}
+.hovered {
+  border: 2px #cf913e dashed;
+}
+
+.bottom-line.red {
+  background-color: red;
+}
+
+.bottom-line.blue {
+  background-color: #0c0c36;
+}
+
+.top-close {
+  position: absolute;
+  right: 2px;
+  top: -30px;
+  background-color: transparent;
+  font-size: 45px;
+  font-weight: normal;
+  color: black;
+  width: 20px;
+  max-width: 20px;
+  max-height: 30px;
+  cursor: pointer;
+}
+
+#logo-image {
+  width: 0;
+  -webkit-animation-name: logoimage; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: logoimage;
+  animation-duration: 1s;
+   animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+#start-btn:hover {
+  cursor: pointer;
+}
+
+#start-btn {
+  visibility: hidden;
+  -webkit-animation-name: startbtn; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: startbtn;
+  animation-duration: 1s;
+   animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes startbtn {
+  from {position: relative; bottom: -20%;}
+  to {position: static; bottom: 0; visibility: visible;}
+}
+
+/* Standard syntax */
+@keyframes startbtn {
+  from {position: relative; bottom: -20%;}
+  to {position: static; bottom: 0; visibility: visible;}
+}
+
+#floor-text {
+  visibility: hidden;
+  -webkit-animation-name: floortext; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: floortext;
+  animation-duration: 1s;
+   animation-delay: 2s;
+  animation-fill-mode: forwards;
+   animation-timing-function: linear;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes floortext {
+  from {position: relative; bottom: -20%;}
+  to {position: static; bottom: 0; visibility: visible;}
+}
+
+/* Standard syntax */
+@keyframes floortext {
+  from {position: relative; bottom: -20%;}
+  to {position: static; bottom: 0; visibility: visible;}
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes logoimage {
+  from {width: 0;}
+  to {width: 100px;}
+}
+
+/* Standard syntax */
+@keyframes logoimage {
+  from {width: 0;}
+  to {width: 100px;}
+}
+
+.top-content.animate-top {
+  display: grid;
+  -webkit-animation-name: animatetop; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: animatetop;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+   animation-timing-function: ease-in-out;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes animatetop {
+  
+    0%   {height: 0px; visibility: hidden; bottom: 100%;}
+  25%  {height: 25%; visibility: visible; top: 75%;}
+  50%  {height: 50%; visibility: visible; top: 50%;}
+  75%  {height: 75%; visibility: visible; top: 25%;}
+  100% {height: 100%;visibility: visible; top: 0%;}
+}
+
+/* Standard syntax */
+@keyframes animatetop {
+  from {position: absolute; bottom: 50px}
+  to {position: absolute; bottom: 160px; visibility: visible;}
+}
